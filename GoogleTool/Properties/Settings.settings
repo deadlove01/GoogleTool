@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GoogleTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APP_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">My GPlus</Value>
+    </Setting>
+    <Setting Name="CLIENT_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">224026233474-aoekci2lv3beb3fu9in4u1iqs9i32qi3.apps.googleusercontent.com</Value>
+    </Setting>
+    <Setting Name="CLIENT_SECRET" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VS2420KZJl2-3BXkhwwLf5nM</Value>
+    </Setting>
+    <Setting Name="CLIENT_WEB_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">224026233474-ne7tju6tut6om80j7e07d16kpvouvugk.apps.googleusercontent.com</Value>
+    </Setting>
+    <Setting Name="CLIENT_WEB_SECRET" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LjddkvK0s2CPdRlPayZKIYjN</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
