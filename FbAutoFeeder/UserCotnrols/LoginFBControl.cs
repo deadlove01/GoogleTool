@@ -138,31 +138,30 @@ namespace FbAutoFeeder.UserCotnrols
                     //    Thread.Sleep(3000);
                     //}
 
-
-
+                    
 
                     using (DriverController ctrl = new DriverController(userAgent.agent_string))
                     {
                         ctrl.NotifyLogLabelUI += UpdateLog;
-                        ctrl.Test();
-                        //bool result = ctrl.Start(fbInfoList[i]);
-                        //if (result)
-                        //{
-                        //    string cookie = ctrl.GetFbCookie();
-                        //    if (!string.IsNullOrEmpty(cookie))
-                        //    {
-                        //        logger.Info("cookie: \n" + cookie);
+                        //ctrl.Test();
+                        bool result = ctrl.Start(fbInfoList[i]);
+                        if (result)
+                        {
+                            string cookie = ctrl.GetFbCookie();
+                            if (!string.IsNullOrEmpty(cookie))
+                            {
+                                logger.Info("cookie: \n" + cookie);
 
-                        //        fbInfoList[i].Cookie = cookie;
+                                fbInfoList[i].Cookie = cookie;
 
-                        //        this.Invoke(new Action(() =>
-                        //        {
-                        //            blvFbInfos.Refresh();
-                        //        }));
-                        //        File.AppendAllLines(cookiePath + "cookies.txt", new string[] { fbInfoList[i].ToString() });
-                        //        UpdateLog(this, "Write cookie to file successful!");
-                        //    }
-                        //}
+                                this.Invoke(new Action(() =>
+                                {
+                                    blvFbInfos.Refresh();
+                                }));
+                                File.AppendAllLines(cookiePath + "cookies.txt", new string[] { fbInfoList[i].ToString() });
+                                UpdateLog(this, "Write cookie to file successful!");
+                            }
+                        }
                     }
                 }
                 

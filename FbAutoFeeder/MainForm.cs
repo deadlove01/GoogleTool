@@ -35,7 +35,7 @@ namespace FbAutoFeeder
 
             FbFeederControl feederCtrl = new FbFeederControl();
             feederCtrl.Dock = DockStyle.Fill;
-            tabPage1.Controls.Add(feederCtrl);
+            tabPage2.Controls.Add(feederCtrl);
 
         }
     }

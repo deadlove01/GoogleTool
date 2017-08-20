@@ -13,6 +13,8 @@ namespace FbAutoFeeder.Models
         public string Cookie { get; set; }
         public string UserAgent { get; set; }
         public bool CheckPoint { get; set; }
+        public bool IsUse { get; set; }
+        public string Status { get; set; }
 
         public override string ToString()
         {
